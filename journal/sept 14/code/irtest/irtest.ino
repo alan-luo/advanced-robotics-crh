@@ -1,3 +1,8 @@
+/*
+Code adapted from Adafruit. 
+https://learn.adafruit.com/using-an-infrared-library/hardware-needed
+*/
+
 #include "IRLibAll.h"
  
 //Create a receiver object to listen on pin 2

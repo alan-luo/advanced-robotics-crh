@@ -1,3 +1,8 @@
+/*
+Code adapted from Adafruit.
+https://learn.adafruit.com/adafruit-arduino-lesson-3-rgb-leds/overview?view=all
+*/
+
 int redPin = 11;
 int bluePin = 10;
 int greenPin = 9;
@@ -13,7 +18,4 @@ void setColor(int red, int green, int blue) {
   analogWrite(redPin, red);
   analogWrite(greenPin, green);
   analogWrite(bluePin, blue);  
-}
-void loop() {
-  
 }

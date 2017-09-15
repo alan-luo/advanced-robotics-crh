@@ -1,5 +1,6 @@
 /*
-Adafruit Arduino - Lesson 4. 8 LEDs and a Shift Register
+Code adapted from Adafruit.
+https://learn.adafruit.com/adafruit-arduino-lesson-4-eight-leds
 */
 
 int latchPin = 5;
@@ -8,28 +9,24 @@ int dataPin = 4;
 
 byte leds = 0;
 
-void setup() 
-{
+void setup() {
   pinMode(latchPin, OUTPUT);
   pinMode(dataPin, OUTPUT);  
   pinMode(clockPin, OUTPUT);
 }
 
-void loop() 
-{
+void loop() {
   leds = 0;
   updateShiftRegister();
   delay(500);
-  for (int i = 0; i < 8; i++)
-  {
+  for (int i = 0; i < 8; i++) {
     bitSet(leds, i);
     updateShiftRegister();
     delay(500);
   }
 }
 
-void updateShiftRegister()
-{
+void updateShiftRegister() {
    digitalWrite(latchPin, LOW);
    shiftOut(dataPin, clockPin, LSBFIRST, leds);
    digitalWrite(latchPin, HIGH);
