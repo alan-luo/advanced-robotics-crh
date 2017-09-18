@@ -1,0 +1,24 @@
+#N canvas 184 164 523 614 10;
+#X obj 187 391 dac~;
+#X obj 35 47 comport 9600;
+#X msg 36 17 devices;
+#X floatatom 35 70 5 0 0 0 - - -;
+#X msg 95 19 open 1;
+#X msg 163 21 close;
+#X obj 32 99 moses 50;
+#X floatatom 38 127 5 0 0 0 - - -;
+#X obj 122 212 phasor~;
+#X obj 35 158 * 40;
+#X obj 152 101 print;
+#X text 275 31 This patch just takes a single digit serial and outputs
+a tone;
+#X connect 1 0 3 0;
+#X connect 1 0 10 0;
+#X connect 2 0 1 0;
+#X connect 3 0 6 0;
+#X connect 4 0 1 0;
+#X connect 5 0 1 0;
+#X connect 6 0 7 0;
+#X connect 7 0 9 0;
+#X connect 8 0 0 0;
+#X connect 9 0 8 0;
