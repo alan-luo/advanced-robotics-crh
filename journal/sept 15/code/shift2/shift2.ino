@@ -46,7 +46,7 @@ void loop()  {
   
   // increment and prevent overflow
   count += 1;
-  count = count % 128;
+  count = count % 256;
 
   // IR code
   if (myReceiver.getResults()) {

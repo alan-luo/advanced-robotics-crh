@@ -1,4 +1,4 @@
-# Sept 14: Arduino Assignments: RGB LED and shift register
+# Sept 15: Arduino Assignments: RGB LED and shift register
 
 I worked through lessons 3 and 4 of the Adafruit Arduino tutorial. 
 
@@ -15,6 +15,7 @@ One thing I found peculiar about Adafruit's design was that they had a resistor 
 - Adafruit lesson 3: ([link](https://learn.adafruit.com/adafruit-arduino-lesson-3-rgb-leds/overview?view=all))
 - Working video: `assets/rgb_video.mov`
 - Code: `code/rgbled`
+
 
 ## Shift Register (Lesson 4)
 
