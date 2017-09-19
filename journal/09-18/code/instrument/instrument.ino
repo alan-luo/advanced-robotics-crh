@@ -8,8 +8,12 @@ int trigPin = 11;    //Trig - green Jumper
 int echoPin = 12;    //Echo - yellow Jumper
 long duration, cm, inches;
 
+// these are trigger bits which indicate what type of data is being sent over serial
+
 const int MODE_ULTRA = 254;
 const int MODE_IR = 253;
+
+// these are pre-dumped IR codes for each of the seven buttons on the bottom row of the remote
 
 const long ZERO =   16753245;
 const long ONE =    16720605;
@@ -65,7 +69,7 @@ void loop() {
 
   if (myReceiver.getResults()) {
     myDecoder.decode();
-    // set one of three speeds depending on what was pressed
+    // send a value depending on which button was pressed
     if(myDecoder.value == ONE) {
       irvalue = 10;
     } else if(myDecoder.value == TWO) {
