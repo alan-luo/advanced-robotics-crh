@@ -42,4 +42,4 @@ I wrote a webpage to demonstrate convolution. It's found at `code/convolution`.
 **Resources:**
 
 - [GIMP docs on convolution](https://docs.gimp.org/en/plug-in-convmatrix.html)
-- [Working webpage]: `code/convolution`
+- [Working webpage](): `code/convolution`
