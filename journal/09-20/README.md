@@ -39,6 +39,10 @@ Understanding the problem this way opens up much more functionality with the mov
 
 I wrote a webpage to demonstrate convolution. It's found at `code/convolution`.
 
+Here's a gif of the webpage working.
+
+![conv gif](./assets/convolution.gif)
+
 **Resources:**
 
 - [GIMP docs on convolution](https://docs.gimp.org/en/plug-in-convmatrix.html)
