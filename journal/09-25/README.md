@@ -33,7 +33,7 @@ My working circuit:
 
 For this project, I wanted to make something that could actually be converted into something useful. Servos can be used to create precise mechanical transductions, and are often easily programmable. This makes the project easily extensible to a real door (rather than a toy servo) provided access to the right materials.
 
-I used an IR remote to input a four-number combination. The working video demonstrates the combination "1234", but this is easily reprogrammable.
+I used an IR remote to input a four-number combination. The working video demonstrates the combination "1234", but this is easily reprogrammable. When the correct combination is entered, the servo position is set to 170. From here, once any number is pressed, the position is set to 0 until the correct combination is entered again.
 
 One issue I ran into during development was that the servo would keep moving indefinitely when calling `servo.write(170)`. I'm not really sure why this happens, but my prediction is that the servo goes just past 170, then loops all the way around to reach 170 again, and so on. I'm not really sure how to resolve this, since I just copied code from the "knob" example.
 
