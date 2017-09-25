@@ -37,6 +37,8 @@ I used an IR remote to input a four-number combination. The working video demons
 
 One issue I ran into during development was that the servo would keep moving indefinitely when calling `servo.write(170)`. I'm not really sure why this happens, but my prediction is that the servo goes just past 170, then loops all the way around to reach 170 again, and so on. I'm not really sure how to resolve this, since I just copied code from the "knob" example.
 
+I used the shift register to provide visual feedback of the last number pressed. IR can be a little finicky, and numbers occasionally don't go through. The shift register will flash with the number pressed (in binary) when a valid IR signal is processed.
+
 Here's my working circuit:
 
 ![lock circuit](./assets/lock_circuit.jpg)
