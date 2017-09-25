@@ -4,7 +4,7 @@ I did Lesson 15 of the Adafruit Arduino lessons.
 
 ## H-Bridge
 
-I followed Adafruit's lesson 15 covers using an H-bridge to reverse a motor's direction. At first, the motor didn't run, and I thought I had run into an issue somewhere with either the circuit or the code. However, I realized that the issue was just that the motor was very weak, and could be easily stopped with even a light touch. To mitigate this for testing, I taped the motor down my table. This also made filming easier.
+Adafruit's lesson 15 covers using an H-bridge to reverse a motor's direction. At first, the motor didn't run, and I thought I had run into an issue somewhere with either the circuit or the code. However, I realized that the issue was just that the motor was very weak, and could be easily stopped with even a light touch. To mitigate this for testing, I taped the motor down my table. This also made filming easier.
 
 My working circuit:
 
