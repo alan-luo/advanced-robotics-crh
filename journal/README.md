@@ -5,3 +5,4 @@
 - [Sept 20](./09-20/): convolution, motor
 - [Sept 22](./09-22/): H-bridge
 - [Sept 25](./09-25/): servo motor
+- [Sept 27](./09-27/): stepper motor
