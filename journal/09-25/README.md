@@ -43,6 +43,13 @@ Here's my working circuit:
 
 ![lock circuit](./assets/lock_circuit.jpg)
 
+
+EDIT 09/26:
+
+The issue turned out to be with the quality of the little blue toy servos. When calling `servo.write(angle)`, if `angle` is below a threshold of about 10-15 (varying from servo to servo, based on tests with friends), then the servo runs indefinitely. The code in `code/lock` has been updated accordingly. A new working video has been added at `assets/lock_video2.mp4`.
+
+We tried to fix this by using a proper servo. However, the proper servo drew so much power that it could not run with other components.
+
 **Resources**
 
 - Working video: `assets/lock_video.mov`

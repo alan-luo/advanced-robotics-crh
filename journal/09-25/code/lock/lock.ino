@@ -85,9 +85,9 @@ void registerValue(int number) {
 //  Serial.print(combo[3]);
 //  Serial.println();
   if(checkCombo()) {
-    angle = 0;
+    angle = 70;
   } else {
-     angle = 170;
+     angle = 140;
   }
 }
 void loop() { 
