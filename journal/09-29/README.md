@@ -66,6 +66,10 @@ In my case, to prevent overflow, I reset the value of the animation loop at the 
 
 The structure of my loop is simple. First, I reset everything by setting `leds` (the shift register byte) to 0 and disabling the buzzer. Then, I update the shift with the current cycle in the frame. Finally, I add an conditional to enable the buzzer on the final frame.
 
+Here's the working circuit. It's just a shift register circuit with a buzzer.
+
+![circuit](./assets/circuit.jpg)
+
 ## Troubleshooting
 
 I didn't really have any issue getting the circuit to work. I already had the shift register set up, so all I needed to do was use the buzzer. I had no trouble getting the buzzer to work. I followed [this](http://www.ardumotive.com/how-to-use-a-buzzer-en.html) tutorial.
@@ -97,4 +101,6 @@ void loop(){
 ## Working code
 
 - `code/test`: working code for finished assignment
+- `assets/video.mp4`: working video for finished assignment
 - `code/test2`: working code after adding other stuff
+- `assets/video2.mp4`: working video after adding other stuff

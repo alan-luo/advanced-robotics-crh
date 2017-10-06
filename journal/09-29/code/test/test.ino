@@ -31,12 +31,12 @@ void loop(){
   updateShiftRegister();
 
   if(frameCount == 7) { //frameCount == 8
-//    tone(buzzer, 1000); //enable this
+    tone(buzzer, 1000); //enable this
   }
  
   frameCount++;
   frameCount = frameCount % 8;
-  delay(1000);
+  delay(5000);
 }
 
 void updateShiftRegister() {
