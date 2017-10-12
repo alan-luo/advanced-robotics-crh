@@ -6,3 +6,7 @@
 - [Sept 22](./09-22/): H-bridge
 - [Sept 25](./09-25/): servo motor
 - [Sept 27](./09-27/): stepper motor
+- [Sept 29](./09-29/): Arduino assessment
+- [Oct 06](./10-06/): fixing a motor
+- [Oct 09](./10-09/): 3D printing
+- [Oct 11](./10-11/): laser cutting
