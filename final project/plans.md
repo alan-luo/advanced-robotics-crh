@@ -53,30 +53,17 @@ parts needed:
 8 by 7 for the final
 3.15 by 2.75in base
 
+
 height:
 - 1cm bottom layer (0.4)
 - 1/8 platform
 - 2.5cm middle layer (1.0)
-- 1/8 platform
-- 1.5cm top layer (0.6)
 
-total: 3.15 by 2.75 by 2.25
+total: 3 by 3.25 by 1.525
+
+outer: 3.25 by 3.5 by 1.75
+  3.5 by 3.75 by 2
 
 outer width (totoro width): 
 
 total = 3.15 + 1/4 = 3.40
-
-bottom layer (batteries):
-
-- 
-
-mid layer (arduino):
-
-
-
-lion charger: charlie has it
-
-
-airtight / cooling
-
-- ventilation in bottom layer

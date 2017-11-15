@@ -13,6 +13,8 @@ Taken directly from bleuart_cmdmode from the Bluefruit library
 
 #include "DHT.h" // for temp
 
+#include <Servo.h> // for servo
+
 #if SOFTWARE_SERIAL_AVAILABLE
   #include <SoftwareSerial.h>
 #endif
@@ -30,12 +32,19 @@ void error(const __FlashStringHelper*err) {
 }
 
 /* set up DHT stuff */
-#define DHTPIN 2     // what digital pin we're connected to
+#define DHTPIN 9     // what digital pin we're connected to
 #define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
 DHT dht(DHTPIN, DHTTYPE);
 
-int lightPin = A0;
+int lightPin = A0; // light sensor
 
+int servoPin = 5;
+Servo servo;  
+
+int pumpPin = 3;
+
+
+int angle = 0;   // servo position in degrees
 
 void setup(void) {
   // ------ bluetooth stuff ---------
@@ -76,12 +85,11 @@ void setup(void) {
   while (! ble.isConnected()) {
       delay(500);
   }
-
-  // set up dht
-  dht.begin();
-
-  // set up light sensor
-  analogReference(EXTERNAL);
+  
+  dht.begin(); // set up dht
+  analogReference(EXTERNAL); // set up light sensor
+  servo.attach(servoPin); // servo
+  pinMode(pumpPin, OUTPUT); // set up transistor switch
 }
 
 /**************************************************************************/
@@ -89,6 +97,8 @@ void setup(void) {
     @brief  Constantly poll for new command or response data
 */
 /**************************************************************************/
+
+int count = 0;
 void loop(void) {
   // ----- get sensor inputs
   // dht
@@ -108,11 +118,11 @@ void loop(void) {
   ble.print("AT+BLEUARTTX=");
   ble.println(data);
 
+  /*
   // check response stastus
   if (! ble.waitForOK() ) {
     Serial.println(F("Failed to send?"));
   }
-
 
   // Check for incoming characters from Bluefruit
   ble.println("AT+BLEUARTRX");
@@ -125,15 +135,25 @@ void loop(void) {
   Serial.print(F("[Recv] ")); Serial.println(ble.buffer);
   ble.waitForOK();
 
-
-  delay(1000);
-
+  */
+  if(count % 2 == 0) {
+    for(angle = 0; angle < 180; angle++) {                                  
+      servo.write(angle);               
+      delay(15);                   
+    }
+  } else {
+    for(angle = 180; angle > 0; angle--) {                              
+      servo.write(angle);           
+      delay(15);       
+    }
+  }
+  count++;
+ 
 }
 
 float rawRange = 1024; // 3.3v
 float logRange = 5.0; // 3.3v = 10^5 lux
-float RawToLux(int raw)
-{
+float RawToLux(int raw) {
   float logLux = raw * logRange / rawRange;
   return pow(10, logLux);
 }
