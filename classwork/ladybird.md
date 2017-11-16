@@ -8,15 +8,9 @@ The data is inconsistent and difficult to analyze. For instance, for the particu
 
 In addition, for the function of weeding, the system cannot always remove an identified weed. It may remove a crop by accident, or not entirely kill the weed, which can lead to chemical resistance.
 
-**Are there factors being simplified?**
-
-
-
 **Who is the consumer here?**
 
 Farmers / farm owners: in 2017, there's not much of a distinction. The objective is to save manual labor from these farmers. The guy in the podcast seems to insist that they're not really stealing jobs, and I think this is true to the extent that it only targets very basic manual labor. With the system as is (no weeding), the data must be analyzed anyway, so a farmer is still required for the effective utilization of the system.
-
-**Is this the only project this team has done before in this field?**
 
 
 **What are the potential implications of this being more widespread?**
