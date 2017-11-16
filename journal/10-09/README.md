@@ -9,3 +9,5 @@ My goal was to make a simple but cool print. I managed to find a Voronoi shape g
 I downloaded my model from TinkerCAD and used Cura to slice it to an Ultimaker 2 Extended+.
 
 I left my print overnight. Unfortunately, when I came back the next morning, it had disappeared. I'm assuming the printer messed up somewhere and the print was discarded. However, I noticed that the printer I had used didn't have properly working fans. I wonder if this contributed to the print messing up, since this would lead the filament to not cool properly. Particularly on a thin print like this one, this may have led to curling on the edges of the print.
+
+![phone case](./assets/phonecase.png)
