@@ -10,3 +10,13 @@
 - [Oct 06](./10-06/): fixing a motor
 - [Oct 09](./10-09/): 3D printing
 - [Oct 11](./10-11/): laser cutting
+
+Final Project:
+
+- [Oct 16](./10-16/): initial brainstorming
+- [Oct 20](./10-20/): selecting a project
+- [Oct 25](./10-25/): choosing parts
+- [Oct 27](./10-27/): case design
+
+
+TODO ADD LINKS
